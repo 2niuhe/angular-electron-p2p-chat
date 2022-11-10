@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { PageShellComponent } from './page-shell/page-shell.component';
 import { StartpageComponent } from './startpage/startpage.component';
 import { SharedModule } from '../shared/shared.module';
-import { TestComponent } from './test/test.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { SetttingComponent } from './settting/settting.component';
 
 
 
@@ -12,7 +13,8 @@ import { TestComponent } from './test/test.component';
   declarations: [
     PageShellComponent,
     StartpageComponent,
-    TestComponent
+    AboutMeComponent,
+    SetttingComponent
   ],
   imports: [
     RouterModule,
@@ -22,7 +24,8 @@ import { TestComponent } from './test/test.component';
   exports: [
     PageShellComponent,
     StartpageComponent,
-    TestComponent
+    AboutMeComponent,
+    SetttingComponent
   ]
 })
 export class FrameworkModule { }

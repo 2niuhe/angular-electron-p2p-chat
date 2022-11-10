@@ -16,8 +16,8 @@
 <mat-sidenav-container class="demo-app-container">
   <mat-sidenav class="demo-app-sidenav" #sideNav mode="push"  [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [(opened)]="sidopen">
     <mat-nav-list>
-      <h3 matSubheader>示範用頁面</h3>
-      <a [routerLink]="['/test']" mat-list-item>問卷調查</a>
+      <h3 matSubheader>聊天</h3>
+      <a [routerLink]="['/about']" mat-list-item>关于</a>
       <a [routerLink]="['/', 'dashboard', 'blog']" mat-list-item>部落格</a>
       <a [routerLink]="['/', 'dashboard', 'inbox']" mat-list-item>收件夾</a>
 
