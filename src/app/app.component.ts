@@ -13,7 +13,19 @@ export class AppComponent {
     private electronService: ElectronService,
     private translate: TranslateService
   ) {
-    this.translate.setDefaultLang('en');
+
+    const vLang = window.localStorage.getItem('language-option');
+
+    const broserLang = this.translate.getBrowserLang();
+    let lang = 'zh';
+    if (['en', 'zh'].includes(broserLang)) {
+      lang = broserLang;
+    }
+
+    lang = vLang || lang;
+
+    this.translate.setDefaultLang(lang);
+    this.translate.use(lang);
     console.log('APP_CONFIG', APP_CONFIG);
 
     if (electronService.isElectron) {

@@ -31,6 +31,18 @@ export class PageShellComponent implements OnInit {
 
   }
 
+  switchLang($event) {
+    if (window.localStorage['language-option'] === 'en') {
+          window.localStorage.setItem('language-option', 'zh');
+        } else {
+          window.localStorage.setItem('language-option', 'en');
+
+        }
+
+    window.location.reload();
+
+  }
+
   foo(): void {
     this.sidopen = !this.sidopen;
   }
