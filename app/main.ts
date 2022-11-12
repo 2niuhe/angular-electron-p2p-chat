@@ -66,8 +66,9 @@ ipcMain.on('remove_proxy', (event, arg) => {
   win.webContents.session.setProxy({});
 })
 
-  const debug = require('electron-debug');
-  debug();
+  // const debug = require('electron-debug');
+  // debug();
+
   if (serve) {
 
 

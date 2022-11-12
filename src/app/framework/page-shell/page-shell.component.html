@@ -24,7 +24,7 @@
       <mat-divider></mat-divider>
       <h3 matSubheader>其他頁面</h3>
       <a [routerLink]="['/', 'dashboard', 'main']" mat-list-item>首頁</a>
-      <a [routerLink]="['/']" mat-list-item>Google</a>
+      <a (click)="openGoogle($event)" mat-list-item>Google</a>
       <a [routerLink]="['/']" mat-list-item>Facebook</a>
 
       <mat-divider></mat-divider>

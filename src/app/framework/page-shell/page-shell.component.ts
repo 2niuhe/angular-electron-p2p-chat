@@ -30,6 +30,9 @@ export class PageShellComponent implements OnInit {
   ngOnInit(): void {
 
   }
+  openGoogle($event) {
+    window.open('https://www.google.com');
+  }
 
   switchLang($event) {
     if (window.localStorage['language-option'] === 'en') {
